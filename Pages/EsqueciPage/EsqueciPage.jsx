@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-
+import '../EsqueciPage/EsqueciPage.css'
 const EsqueciPage = () => {
     const [email, setEmail] = useState("");
 
@@ -10,20 +9,25 @@ const EsqueciPage = () => {
     };
 
     return (
-        <div>
-            <h2>Esqueci minha senha</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Email: </label>
-                    <input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
+        <div className="fundo">
+            <div className="login-container">
+                <div className="esquerda">
+                    <h2>Recuperar Senha</h2>
+                    <p>Informe seu e-mail para redefinir sua senha.</p>
                 </div>
-                <button type="submit">Enviar</button>
-            </form>
+                <div className="direita">
+                    <form onSubmit={handleSubmit}>
+                        <input 
+                            type="email" 
+                            placeholder="Email"
+                            value={email} 
+                            onChange={(e) => setEmail(e.target.value)} 
+                            required 
+                        />
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     );
 };

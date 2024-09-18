@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoginPage from '../Pages/LoginPage/LoginPage'
 import CadastroPage from '../Pages/CadastroPage/CadastroPage'
 import EsqueciPage from '../Pages/EsqueciPage/EsqueciPage'
-import InicioPage from '../Pages/InicioPage/InicioPage'
-import ReservaPage from '../Pages/ReservaPage/ReservaPage'
+import TodasPage from '../Pages/TodasPage/TodasPage'
+import ReservadasPage from '../Pages/ReservadasPage/ReservadasPage'
 
 import './App.css'
 
@@ -17,8 +17,8 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/cadastro" element={<CadastroPage />} />
         <Route path="/esqueci" element={<EsqueciPage/>} />
-        <Route path="/inicio" element={<InicioPage/>} />
-        <Route path="/reserva" element={<ReservaPage/>} />
+        <Route path="/todas" element={<TodasPage/>} />
+        <Route path="/reservadas" element={<ReservadasPage/>} />
       </Routes>
     </Router>    
   )

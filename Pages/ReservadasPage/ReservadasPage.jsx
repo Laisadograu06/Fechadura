@@ -1,3 +1,4 @@
+import '../ReservadasPage/ReservadasPage.css'
 
 const ReservaPage =() => {
     return(
