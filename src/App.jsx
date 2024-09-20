@@ -4,7 +4,7 @@ import LoginPage from '../Pages/LoginPage/LoginPage'
 import CadastroPage from '../Pages/CadastroPage/CadastroPage'
 import EsqueciPage from '../Pages/EsqueciPage/EsqueciPage'
 import TodasPage from '../Pages/TodasPage/TodasPage'
-import ReservadasPage from '../Pages/ReservadasPage/ReservadasPage'
+
 
 import './App.css'
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/cadastro" element={<CadastroPage />} />
         <Route path="/esqueci" element={<EsqueciPage/>} />
         <Route path="/todas" element={<TodasPage/>} />
-        <Route path="/reservadas" element={<ReservadasPage/>} />
+       
       </Routes>
     </Router>    
   )
