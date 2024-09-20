@@ -7,18 +7,19 @@
     
 }
 
-.esquerda{
+.esquerda-todas{
     width: 400px; 
     padding: 20px; 
-    background-color: #f0f0f0; 
-    text-align: center; 
+    background-color: #f0f0f0ab; 
     position: fixed; 
     left: 0; 
     top: 0; 
     height: 100%;
     color: black;
+    display: grid;
+    justify-content: center;
 }
-button {
+.button-todas {
     padding: 10px;
     background-color: #4A90E2;
     color: #fff;
@@ -35,10 +36,10 @@ button:hover {
 .baixo {
     background-image: url('../../src/assets/image/foto.png'); 
     background-size: cover; 
-    background-position: center;
     height: 31vh; 
-    width : 15vw; 
-    display: flex;
+    width : 15vw;
     
-    
+}
+.cima{
+    text-align: center;
 }
