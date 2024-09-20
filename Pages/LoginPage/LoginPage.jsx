@@ -21,7 +21,7 @@ const LoginPage = () => {
     const daysOfWeek = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
     const dayOfWeek = daysOfWeek[date.getDay()];
     const formattedDate = `${String(date.getDate()).padStart(2, '0')}/${String(date.getMonth() + 1).padStart(2, '0')}/${date.getFullYear()}`;
-    const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); // Horário sem segundos
+    const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
     return (
         <div className="fundo">

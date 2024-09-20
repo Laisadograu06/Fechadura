@@ -15,14 +15,14 @@
     background-color: rgba(255, 255, 255, 0.3); 
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 600px;
+    width: 800px; /* Aumenta a largura do container */
     height: 500px;
 }
 
 .esquerda-login {
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo mais fosco e branco */
-    color: #000; /* Cor preta */
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: #000; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,72 +37,48 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(150, 100, 255, 0.1); /* Fundo roxo muito suave e transparente */
-    backdrop-filter: blur(15px); /* Efeito de desfoque */
-    border-radius: 0 20px 20px 0; /* Bordas arredondadas apenas à direita */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
-    border-right: 1px solid rgba(150, 100, 255, 0.2); /* Bordas direitas sutis */
-}
-
-
-
-.bem-vindo {
-    font-size: 32px;
-    font-weight: bold;
-    color: #000; 
-    margin: 0;
-    white-space: nowrap;
-}
-
-.motivacao {
-    font-size: 18px;
-    margin: 10px 0; 
-    color: #000; 
-    text-align: center; 
-}
-
-.autor {
-    font-size: 16px;
-    color: #000; 
-    text-align: center; 
+    background-color: rgba(150, 100, 255, 0.1); 
+    backdrop-filter: blur(15px); 
+    border-radius: 0 20px 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-right: 1px solid rgba(150, 100, 255, 0.2); 
 }
 
 .input-login {
     padding: 10px;
     margin-bottom: 15px;
-    border-radius: 15px; /* Borda mais arredondada */
+    border-radius: 25px; 
     border: 1px solid #ccc;
     width: 300px;
     font-size: 14px;
+    height: 25px;
 }
 
 .botao-login {
     padding: 10px;
-    background: linear-gradient(90deg, #12E7F5, #7529F8); /* Degradê no botão */
+    background: linear-gradient(90deg, #12E7F5, #7529F8);
     color: #fff;
     border: none;
-    border-radius: 15px; /* Borda mais arredondada */
+    border-radius: 25px; 
     cursor: pointer;
     width: 100%;
     font-size: 16px;
+    
 }
 
 .data-semana {
-    font-size: 25px; /* Tamanho um pouco menor que o Bem-vindo */
-    margin-bottom: 0; /* Remove margem abaixo */
+    font-size: 25px; 
+    margin-bottom: 0;
 }
 
 .data {
-    font-size: 12px; /* Data menor */
-    margin-top: 5px; /* Espaçamento acima */
+    font-size: 12px; 
+    margin-top: 5px; 
 }
 
 .hora {
-    font-size: 30px; /* Tamanho igual ao dia da semana */
+    font-size: 30px; 
 }
-
-
-
 
 .botao-login:hover {
     background-color: #357ABD; 
