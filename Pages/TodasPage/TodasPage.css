@@ -1,0 +1,44 @@
+.fundo {
+    background-image: url('../../src/assets/image/fundo.png'); 
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; 
+    width : 100vw; 
+    
+}
+
+.esquerda{
+    width: 400px; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    text-align: center; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    height: 100%;
+    color: black;
+}
+button {
+    padding: 10px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #357ABD; 
+}
+.baixo {
+    background-image: url('../../src/assets/image/foto.png'); 
+    background-size: cover; 
+    background-position: center;
+    height: 31vh; 
+    width : 15vw; 
+    display: flex;
+    
+    
+}

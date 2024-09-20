@@ -10,12 +10,12 @@ const EsqueciPage = () => {
 
     return (
         <div className="fundo">
-            <div className="login-container">
-                <div className="esquerda">
+            <div className="esqueci-container">
+                <div className="esquerda-esqueci">
                     <h2>Recuperar Senha</h2>
                     <p>Informe seu e-mail para redefinir sua senha.</p>
                 </div>
-                <div className="direita">
+                <div className="direita-esqueci">
                     <form onSubmit={handleSubmit}>
                         <input 
                             type="email" 
@@ -24,7 +24,7 @@ const EsqueciPage = () => {
                             onChange={(e) => setEmail(e.target.value)} 
                             required 
                         />
-                        <button type="submit">Enviar</button>
+                        <button className="button-esqueci" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>

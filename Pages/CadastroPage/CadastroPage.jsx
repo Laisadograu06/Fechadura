@@ -13,12 +13,12 @@ const CadastroPage = () => {
 
     return (
         <div className="fundo">
-            <div className="login-container">
-                <div className="esquerda">
+            <div className="cadastro-container">
+                <div className="esquerda-cadastro">
                     <h2>Cadastro</h2>
                     <p>Preencha os campos abaixo para se cadastrar.</p>
                 </div>
-                <div className="direita">
+                <div className="direita-cadastro">
                     <form onSubmit={handleCadastro}>
                         <input 
                             type="text" 
@@ -41,7 +41,7 @@ const CadastroPage = () => {
                             onChange={(e) => setPassword(e.target.value)} 
                             required 
                         />
-                        <button type="submit">Cadastrar</button>
+                        <button className="button-cadastro" type="submit">Cadastrar</button>
                     </form>
                 </div>
             </div>

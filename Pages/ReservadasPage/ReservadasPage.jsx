@@ -2,7 +2,7 @@ import '../ReservadasPage/ReservadasPage.css'
 
 const ReservaPage =() => {
     return(
-        <div>
+        <div className="fundo">
 
         </div>
     )

@@ -1,3 +1,4 @@
+
 .fundo {
     background-image: url('../../src/assets/image/fundo.png'); 
     background-size: cover; 
@@ -10,32 +11,37 @@
     
 }
 
-.login-container {
+.esqueci-container {
     display: flex;
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: #ffffff5b;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 600px; 
     border-radius: 20px;
+    height: 500px;
 }
 
-.esquerda {
+.esquerda-esqueci {
     flex: 1;
-    background-color: #4A90E2;
+    background-color: #4a91e29e;
     color: #fff; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    border-radius: 20px 0 0 20px;
+
 }
 
-.direita {
+.direita-esqueci {
     flex: 1;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #3579bd00;
+;
 
 }
 
@@ -53,7 +59,7 @@ input {
     width: 100%;
 }
 
-button {
+.button-esqueci {
     padding: 10px;
     background-color: #4A90E2;
     color: #fff;
@@ -64,6 +70,6 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+button-esqueci:hover {
     background-color: #357ABD; 
 }
