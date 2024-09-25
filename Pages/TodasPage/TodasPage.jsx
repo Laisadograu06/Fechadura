@@ -16,7 +16,6 @@ const TodasPage = () => {
         alert("ID: " + id + " Sala: " + nome);
     }
 
- 
     const renderSalas = (listaSalas) => {
         return listaSalas.map((item) => (
             <div key={item.id}>

@@ -56,8 +56,8 @@ button:hover {
 
 .salas-A, .salas-B, .salas-C {
     display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); /* Organiza as salas verticalmente dentro de cada coluna */
-    gap: 5px; /* Espaçamento entre as salas dentro das colunas */
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5px; 
 }
 
 .salas-A div, .salas-B div, .salas-C div {

@@ -32,3 +32,8 @@
     background-color: #C6DAFA;
     color: #405280;
 }
+    .mensagem {
+        color: red;
+        font-weight: bold;
+        margin-top: 5px;
+    }
