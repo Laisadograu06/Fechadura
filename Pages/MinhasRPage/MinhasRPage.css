@@ -16,7 +16,7 @@
   padding: 20px;
   height: 100%;
   box-shadow: 0 7px 8px rgba(0, 5, 0, 0.5);
-
+  margin-left: -250px;
   background-color: #a5a5a55b;
 }
 
@@ -79,8 +79,8 @@
 .main-content {
   width: 50;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 50px;
 }
 
 h2 {
@@ -92,7 +92,6 @@ h2 {
   border-radius: 15px;
   padding: 40px;
   text-align: center;
-
   background-color: #f3f1f1;
   width: 600px;
   height: 600px;
@@ -110,6 +109,7 @@ h2 {
 .reservation-form {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 .reservation-form label {
@@ -118,10 +118,12 @@ h2 {
 }
 
 .reservation-form input {
-  width: 100%;
-  padding: 10px;
+  padding: 12px; /* Aumentei o padding */
+  margin: 8px 0; /* Adicionei mais margem para separação */
+  width: 85%; /* Largura ajustada para ficar mais consistente */
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
+  font-size: 16px;
   margin-top: 5px;
 }
 
@@ -135,6 +137,7 @@ h2 {
   margin-top: 20px;
   margin-left: 70px;
   width: 500px;
+  transition: background-color 0.3s ease;
 }
 
 .reserve-btn:hover {
@@ -148,7 +151,11 @@ label {
 }
 
 .hr {
-  color: #545454;
-  width: 170px;
-  display: flex;
+  display: inline-block;
+  margin-right: 10px; /* Espaçamento entre os horários */
+  width: 45%; /* Deixando os campos menores para caberem lado a lado */
+}
+
+.hrs {
+  display: inline-block;
 }

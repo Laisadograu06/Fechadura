@@ -6,6 +6,16 @@ const MinhasRPage = () => {
   const [data, setData] = useState("");
   const [horario, setHorario] = useState("");
 
+  
+  const handleReservation = (e) => {
+    e.preventDefault();
+    console.log("Nome:", usernome);
+    console.log("Data:", data);
+    console.log("Horário:", horario);
+
+    alert(`Reserva feita para ${usernome} na data ${data}, às ${horario}`);
+  };
+
   return (
     <div className="fundo">
       <div className="sidebar">
@@ -33,7 +43,7 @@ const MinhasRPage = () => {
             alt="User Icon"
             className="user-icon"
           />
-          <form className="reservation-form">
+          <form className="reservation-form" onSubmit={handleReservation}>
             <label>
               <input
                 type="text"
@@ -65,7 +75,9 @@ const MinhasRPage = () => {
                 onChange={(e) => setHorario(e.target.value)}
               />
             </label>
-            <button className="reserve-btn">Reservar</button>
+            <button className="reserve-btn" type="submit">
+              Reservar
+            </button>
           </form>
         </div>
       </div>
