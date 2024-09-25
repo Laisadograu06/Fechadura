@@ -15,7 +15,7 @@
     background-color: rgba(255, 255, 255, 0.3); 
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 800px; /* Aumenta a largura do container */
+    width: 800px; 
     height: 500px;
 }
 
@@ -83,3 +83,5 @@
 .botao-login:hover {
     background-color: #357ABD; 
 }
+
+
