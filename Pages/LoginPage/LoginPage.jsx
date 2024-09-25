@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import '../LoginPage/LoginPage.css';
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [date, setDate] = useState(new Date());
+    const [errorMessage, setErrorMessage] = useState("");
+    const navigate = useNavigate();
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -13,9 +16,31 @@ const LoginPage = () => {
         return () => clearInterval(timer);
     }, []);
 
+
+    const mockAuth = (username, password) => {
+        const users = [
+            { username: 'admin', password: 'admin123' },
+            { username: 'user', password: 'user123' }
+        ];
+
+        return users.find(user => user.username === username && user.password === password);
+    };
+
     const handleLogin = (e) => {
         e.preventDefault();
-        console.log("Username:", username, "Password:", password);
+        try {
+            const isAuthenticated = mockAuth(username, password);
+            
+            if (isAuthenticated) {
+                navigate('/todas');
+                setErrorMessage(""); 
+            } else {
+                setErrorMessage("Nome de usuário ou senha inválidos."); 
+            }
+        } catch (error) {
+            setErrorMessage("Ocorreu um erro no login.");
+            console.error("Erro ao tentar fazer login:", error);
+        }
     };
 
     const daysOfWeek = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
@@ -42,7 +67,7 @@ const LoginPage = () => {
                             type="text" 
                             value={username} 
                             onChange={(e) => setUsername(e.target.value)} 
-                            placeholder="Cadastre-se" 
+                            placeholder="Usuário" 
                             required 
                         />
 
@@ -51,9 +76,11 @@ const LoginPage = () => {
                             type="password" 
                             value={password} 
                             onChange={(e) => setPassword(e.target.value)} 
-                            placeholder="Login" 
+                            placeholder="Senha" 
                             required 
                         />
+
+                        {errorMessage && <p className="error-message">{errorMessage}</p>} 
                         
                         <button className="botao-login" type="submit">Entrar</button>
                     </form>
@@ -64,5 +91,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
-//
