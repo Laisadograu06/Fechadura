@@ -1,6 +1,5 @@
-/* Estilos gerais */
+
 body {
- 
     background-image: url('../../src/assets/image/fundo.png'); 
     background-size: cover; 
     background-position: center; 
@@ -19,6 +18,7 @@ body {
   background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
   align-items: center;
   justify-content: center;
+  border-radius: 25px;
 }
 
 
@@ -31,8 +31,7 @@ body {
     top: 0; 
     height: 100%;
     color: black;
-    display: grid;
-    justify-content: center;
+
 }
 
 .profile-section {
@@ -58,16 +57,13 @@ body {
 }
 
 .menu-btn {
-
-  width: 100%;
-  background-color: #fff;
+  background-color: #4A90E2;
+  color: #fff;
   border: none;
-  margin-bottom: 10px;
-  text-align: left;
+  border-radius: 20px;
+  width: 100%;
   font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  margin-top: 15px;
 }
 
 .menu-btn.active {
@@ -87,13 +83,14 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 100px;
 }
 
 .logout-btn:hover {
   background-color: #ef5350;
 }
 
-/* Main content */
+
 .main-content {
   width: 75%;
   padding: 40px;
@@ -101,6 +98,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 25px;
 }
 
 .room-title {
@@ -128,14 +126,13 @@ label {
   color: #757575;
 }
 
-input[type="text"],
-input[type="date"],
-input[type="time"] {
+input {
   width: 100%;
   padding: 10px;
-  font-size: 16px;
+  margin: 10px 0;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 25px;
+  font-size: 16px;
   box-sizing: border-box;
 }
 
@@ -167,4 +164,11 @@ input[type="time"] {
 
 .btn-reservar:hover {
   background-color: #42a5f5;
+}
+.foto{
+    background-image: url('../../src/assets/image/foto.png'); 
+    background-size: cover; 
+    height: 31vh; 
+    width: 15vw;
+    background-position: center;
 }

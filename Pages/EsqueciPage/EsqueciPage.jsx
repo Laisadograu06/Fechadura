@@ -10,9 +10,9 @@ const EsqueciPage = () => {
 
     return (
         <div className="fundo">
-            <div className="esqueci-container">
+            <div className="esqueci-container-login">
                 <div className="esquerda-esqueci">
-                    <h2>Recuperar Senha</h2>
+                    <h2 className="bem-vindo">Recuperar Senha</h2>
                     <p>Informe seu e-mail para redefinir sua senha.</p>
                 </div>
                 <div className="direita-esqueci">

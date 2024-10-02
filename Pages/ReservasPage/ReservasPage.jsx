@@ -30,11 +30,11 @@ const ReservasPage = () => {
             alt="Edson Sidrone"
             className="profile-img"
           />
-          <h3 className="profile-name">EDSON SIDRONE</h3>
+          <div className="foto"></div>
+          <h3 className="profile-name">EDSON SIDRONIO</h3>
         </div>
         <div className="menu">
-          <button className="menu-btn">Salas Reservadas</button>
-          <button className="menu-btn">Salas Livres</button>
+          <button className="menu-btn">Salas</button>
           <button className="menu-btn active">Minhas Reservas</button>
         </div>
         <button className="logout-btn">SAÍDA</button>
