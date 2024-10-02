@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./ReservaPage.css";
+import "./ReservasPage.css";
 
-const ReservaPage = () => {
+const ReservasPage = () => {
   const [nome, setNome] = useState("");
   const [data, setData] = useState("");
   const [horaInicio, setHoraInicio] = useState("");
@@ -92,4 +92,4 @@ const ReservaPage = () => {
   );
 };
 
-export default ReservaPage;
+export default ReservasPage;

@@ -4,6 +4,7 @@ import LoginPage from "../Pages/LoginPage/LoginPage";
 import CadastroPage from "../Pages/CadastroPage/CadastroPage";
 import EsqueciPage from "../Pages/EsqueciPage/EsqueciPage";
 import TodasPage from "../Pages/TodasPage/TodasPage";
+import ReservasPage from "../Pages/ReservasPage/ReservasPage";
 
 import "./App.css";
 
